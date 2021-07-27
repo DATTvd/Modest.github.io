@@ -9,14 +9,14 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>
+        <div class="container clearfix">
+            <h1 id="logo">
                 <a href="#">
                     <img src="./assets/modest-logo.png" alt="Modest company">
                 </a>
             </h1>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#jumbotron">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Team</a></li>
@@ -27,106 +27,119 @@
         </div>
     </header>
     <section id="jumbotron">
-        <div>
-            <div class="contrainer">           
-                <h1>welcome to our marketplace</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minima consequatur laboriosam quo ipsa vel iusto sed tenetur quas mollitia repellendus, adipisci eum voluptatibus. Veritatis reiciendis beatae doloribus recusandae nesciunt.</p>
+        <div id="background">
+            <div class="container">           
                 <div>
+                    <h1>welcome to our marketplace</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minima consequatur laboriosam quo ipsa vel iusto sed tenetur quas mollitia repellendus, adipisci eum voluptatibus. Veritatis reiciendis beatae doloribus recusandae nesciunt.</p>
+                    <div id="more">
                     <a href="#">View more</a>
                     <a href="#">Video tour</a>
+                    </div>
                 </div>
-                <div class="dots">
-                    <div></div>
-                    <div class="active"></div>
-                    <div></div>
-                </div>
+                <nav class="carousel">
+                    <input id="carousel-item-1" type="radio" name="carousel-dots">
+                    <label for="carousel-item-1">Go to item 1</label>
+                  
+                    <input id="carousel-item-2" type="radio" name="carousel-dots" checked>
+                    <label for="carousel-item-2">Go to item 2</label>
+                  
+                    <input id="carousel-item-3" type="radio" name="carousel-dots"> 
+                    <label for="carousel-item-3">Go to item 3</label>
+                  </nav>
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about">
         <div class="container">
-            <h2>we are modest.</h2>
-            <div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, eligendi quidem necessitatibus tenetur neque distinctio asperiores, id est ab reiciendis doloremque, quis velit omnis pariatur beatae alias magni deleniti sint.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, deserunt atque ea iusto debitis dolorem pariatur sit neque? Tenetur consectetur ab autem nemo non quis voluptas sit molestias, cum minus.</p>
+            <h2 class="present">we are modest.</h2>
+            <div id="info">
+                <div id="info-left">
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, eligendi quidem necessitatibus tenetur neque distinctio asperiores, id est ab reiciendis doloremque, quis velit omnis pariatur beatae alias magni deleniti sint, adipisicing elit. Expedita, deserunt atque ea iusto debitis dolorem pariatur sit neque?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, deserunt atque ea iusto debitis dolorem pariatur sit neque? adipisicing elit. Expedita, deserunt atque ea iusto debitis dolorem pariatur sit neque? Tenetur consectetur ab autem nemo non quis voluptas sit molestias, cum minus.</p>
+                    </div>
+                    <ul>
+                        <li><a id="fb" href="">Facebook</a></li>
+                        <li><a id="tw" href="">Twitter</a></li>
+                        <li><a id="gg" href="">Google</a></li>
+                        <li><a id="dri" href="">Dribbble</a></li>
+                        <li><a id="beh" href="">Behance</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Google</a></li>
-                    <li><a href="">Dribbble</a></li>
-                    <li><a href="">Behance</a></li>
+                <ul id="info-right">
+                    <li>
+                        <h3>Dedication to the customers</h3>
+                        <p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae </p>
+                    </li>
+                    <li>
+                        <h3>working closely with our clients</h3>
+                        <p>Sed blandit nisi urna, sed pellentesque enim consectetur vitae. </p>
+                    </li>
+                    <li>
+                        <h3>increase happiness</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla  </p>
+                    </li>
                 </ul>
-            </div>
-            <div>
-                <div>
-                    <h3>Dedication to the customers</h3>
-                    <p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae </p>
-                </div>
-                <div>
-                    <h3>working closely with our clients</h3>
-                    <p>Sed blandit nisi urna, sed pellentesque enim consectetur vitae. </p>
-                </div>
-                <div>
-                    <h3>increase happiness</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla  </p>
-                </div>
             </div>
         </div>
     </section>
     <section class="team">
         <div class="container">
-            <h2>meet the team</h2>
-            <div>
-                <div>
-                    <div>
+            <h2 class="present">meet the team</h2>
+            <div class="all-team">
+                <div class="wrap">
+                    <div class="person">
+                        <img src="./assets/person1.png" alt="person1">
                         <ul>
                             <li><a href="#">Twitter</a></li>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Linkedin</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="duties">
                         <p>Gloria Bromley</p>
                         <P>CEO and Founder</P>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="wrap">
+                    <div class="person">
+                        <img src="./assets/person2.png" alt="person2">
                         <ul>
                             <li><a href="#">Twitter</a></li>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Linkedin</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="duties">
                         <p>Paul Torres</p>
                         <P>Head of Development</P>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="wrap">
+                    <div class="person">
+                        <img src="./assets/person3.png" alt="person3">
                         <ul>
                             <li><a href="#">Twitter</a></li>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Linkedin</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="duties">
                         <p>Judith Gillette</p>
                         <P>Graphic Desinger</P>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="wrap">
+                    <div class="person">
+                        <img src="./assets/person4.png" alt="person4">
                         <ul>
                             <li><a href="#">Twitter</a></li>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Linkedin</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="duties">
                         <p>Delores Reed</p>
                         <P>Client Service Director</P>
                     </div>
@@ -136,144 +149,146 @@
     </section>
     <section class="work">
         <div class="container">
-            <h2>lovely work.</h2>
-            <div>
-                <div>
-                    <span>dau cong</span>
-                    <div>
-                        <p>partnership guidlines</p>
-                    </div>
+            <h2 class="present">lovely work.</h2>
+            <div id="landscape">
+                <div class="landscape-picture">
+                    <img src="./assets/pic1.png" alt="">
+                    <a href="" class="plus">Plus symbol</a>                  
+                    <p class="place">partnership guidlines</p>                    
                 </div>
-                <div>
-                    <span>dau cong</span>
-                    <div>
-                        <p>partnership guidlines</p>
-                    </div>
+                <div class="landscape-picture">
+                    <img src="./assets/pic2.png" alt="">
+                    <a href="" class="plus">Plus symbol</a>
+                    <p class="place">partnership guidlines</p>
                 </div>
-                <div>
-                    <span>dau cong</span>
-                    <div>
-                        <p>partnership guidlines</p>
-                    </div>
+                <div class="landscape-picture">
+                    <img src="./assets/pic3.png" alt="">
+                    <a href="" class="plus">Plus symbol</a>
+                    <p class="place">partnership guidlines</p>
                 </div>
-                <div>
-                    <span>dau cong</span>
-                    <div>
-                        <p>partnership guidlines</p>
-                    </div>
+                <div class="landscape-picture">
+                    <img src="./assets/pic4.png" alt="">
+                    <a href="" class="plus">Plus symbol</a>
+                    <p class="place">partnership guidlines</p>
                 </div>
-                <div>
-                    <span>dau cong</span>
-                    <div>
-                        <p>partnership guidlines</p>
-                    </div>
+                <div class="landscape-picture">
+                    <img src="./assets/pic5.png" alt="">
+                    <a href="" class="plus">Plus symbol</a>
+                    <p class="place">partnership guidlines</p>
                 </div>
-                <div>
-                    <span>dau cong</span>
-                    <div>
-                        <p>partnership guidlines</p>
-                    </div>
+                <div class="landscape-picture">
+                    <img src="./assets/pic6.png" alt="">
+                    <a href="" class="plus">Plus symbol</a>
+                    <p class="place">partnership guidlines</p>
                 </div>
             </div>
-            <div>
+            <div id="show-more">
                 <a href="#">show me more</a>
             </div>
         </div>
     </section>
     <section class="services">
         <div class="container">
-            <h2>what we do.</h2>
-            <div>
-                <span>anh icon</span>
-                <p>Easy theme Setup</p>
-                <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. </p>
-            </div>
-            <div>
-                <span>anh icon</span>
-                <p>pixel perfect design</p>
-                <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. </p>
-            </div>
-            <div>
-                <span>anh icon</span>
-                <p>responsive display</p>
-                <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. </p>
-            </div>
-            <div>
-                <span>anh icon</span>
-                <p>24/7 support</p>
-                <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. </p>
-            </div>
-            <div>
-                <span>anh icon</span>
-                <p>Easy theme Setup</p>
-                <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. </p>
-                <div>
-                    <span>anh icon</span>
-                    <p>pixel perfect design</p>
+            <h2 class="present">what we do.</h2>
+            <div id="all-service">
+                <div class="service-items">
+                    <img src="./assets/setup-icon.png" alt="">
+                    <title>Easy theme Setup</title>
                     <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. </p>
                 </div>
-                <div>
-                    <span>anh icon</span>
-                    <p>responsive display</p>
-                    <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. </p>
+                <div class="service-items">
+                    <img src="./assets/pencil-icon.png" alt="">
+                    <title>pixel perfect design</title>
+                    <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
                 </div>
-                <div>
-                    <span>anh icon</span>
-                    <p>24/7 support</p>
-                    <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. </p>
+                <div class="service-items">
+                    <img src="./assets/mobile-icon.png" alt="">
+                    <title>responsive display</title>
+                    <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
                 </div>
+                <div class="service-items">
+                    <img src="./assets/clock-icon.png" alt="">
+                    <title>24/7 support</title>
+                    <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+                </div>
+                <div class="service-items">
+                    <img src="./assets/setup-icon.png" alt="">
+                    <title>Easy theme Setup</title>
+                    <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+                </div>
+                <div class="service-items">
+                    <img src="./assets/pencil-icon.png" alt="">
+                    <title>pixel perfect design</title>
+                    <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+                </div>
+                <div class="service-items">
+                    <img src="./assets/mobile-icon.png" alt="">
+                    <title>responsive display</title>
+                    <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+                </div>
+                <div class="service-items">
+                    <img src="./assets/clock-icon.png" alt="">
+                    <title>24/7 support</title>
+                    <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+                </div>
+                
         </div>
     </section>
     <section class="features">
-        <h2>features.</h2>
-        <div>
-            <img src="" alt="">
-            <p>Product Design: Eames Chairs</p>
-            <p>Eames designs are certainly iconic. Everyone of us know at leas</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Elegant and Colorful Logos</p>
-            <p>I’ve always found logo design to be one of the most challenging</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>A Showcase of Creative</p>
-            <p>It’s always interesting to see another designer’s take on a fam</p>
+        <div class="container">
+            <h2 class="present">features.</h2>
+            <div id="colum-features">
+                <div class="something">
+                    <img src="./assets/pic7.png" alt="">
+                    <h3>Product Design: Eames Chairs</h3>
+                    <p>Eames designs are certainly iconic. Everyone of us know at leas</p>
+                </div>
+                <div class="something">
+                    <img src="./assets/pic8.png" alt="">
+                    <h3>Elegant and Colorful Logos</h3>
+                    <p>I’ve always found logo design to be one of the most challenging</p>
+                </div>
+                <div class="something">
+                    <img src="./assets/pic9.png" alt="">
+                    <h3>A Showcase of Creative</h3>
+                    <p>It’s always interesting to see another designer’s take on a fam</p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="contact">
-        <h2>stay in touch.</h2>
-        <div>map</div>
         <div class="container">
-            <div>
+            <h2 class="present">stay in touch.</h2>
+        </div>
+        <div id="map">map</div>
+        <div class="container">
+            <div id="contact-info">
                 <h3>contact information</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. </p>
                 <p>Cras fermentum elit quis magna congue, <span>vel sodales</span> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus </p>
             </div>
             <form action="">
-                <label for="name">your name</label>
-                <input type="text">
-                <label for="email">your email</label>
-                <input type="email">
-                <label for="message">your message</label>
-                <textarea name="message" id="" rows="10"></textarea>
+                <div id="name">
+                    <label class="label-form" for="name">your name</label>
+                    <input type="text">
+                </div>
+                <div id="email">
+                    <label  class="label-form" for="email">your email</label>
+                    <input type="email">
+                </div>
+                <div id="message">
+                    <label  class="label-form" for="message">your message</label>
+                    <textarea name="message" id="" rows="10"></textarea>
+                </div>
                 <button type="submit">send message</button>
             </form>
         </div>
     </section>
     <footer>
-        <div class="container">
+        <div id="footer-info" class="container clearfix">
             <p>© Copyright 2014 by PSD Booster. All Rights Reserved.</p>
-            <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Skype</a></li>
-                <li><a href="#">Behance</a></li>
-                <li><a href="#">Linkedin</a></li>
-            </ul>
+            <img src="./assets/last-icon.png" alt="">
         </div>
-    </footer>
-    
+    </footer>  
 </body>
 </html>
